@@ -1,13 +1,41 @@
-tr:nth-child(even) {
-    background-color: #D6EEEE;
-  }
-  td:nth-child(even), th:nth-child(even) {
-    background-color: #D6EEEE;
-  }
-  tr:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
-  }
-  
-  th:nth-child(even),td:nth-child(even) {
-    background-color: rgba(150, 212, 212, 0.4);
-  }
+<table>
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+    </colgroup>
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+  ...
+  <table>
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+      <col span="3" style="background-color: pink">
+    </colgroup>
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+  ...
+  <table>
+    <colgroup>
+      <col span="3">
+      <col span="2" style="background-color: pink">
+    </colgroup>
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>
+  ...<table>
+    <colgroup>
+      <col span="2">
+      <col span="3" style="visibility: collapse">
+    </colgroup>
+    <tr>
+      <th>MON</th>
+      <th>TUE</th>
+      <th>WED</th>
+      <th>THU</th>  
