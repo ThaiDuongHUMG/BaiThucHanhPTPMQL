@@ -18,6 +18,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Asus\OneDrive\Desktop\BaiThucHanhPTPMQL\DemoMvc
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Asus/OneDrive/Desktop/BaiThucHanhPTPMQL/DemoMvc/Views/Employee/Hello.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSGVsbG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Asus/OneDrive/Desktop/BaiThucHanhPTPMQL/DemoMvc/Views/Employee/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Asus/OneDrive/Desktop/BaiThucHanhPTPMQL/DemoMvc/Views/HelloWorld.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSGVsbG9Xb3JsZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
