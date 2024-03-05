@@ -18,7 +18,7 @@ public class PersonController : Controller
 [HttpPost]
 public IActionResult Privacy(Person ps)
 {
-    string strResult = "Xin chao" + ps.PersonID + "-" + ps.FullName;
+    string strResult = "Xin chao" + ps.PersonID + "-" + ps.FullName + "-" + ps.Address;
     ViewBag.HienThi =  strResult;
     return View();
 }
