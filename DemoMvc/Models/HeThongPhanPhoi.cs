@@ -1,6 +1,7 @@
-namespace BaiThucHanh.Models;
-public class HeThongPhanPhoi
+namespace DemoMvc.Models;
+public class Hethongphanphoi 
 {
-    public string MaHTPP {get; set;}
-    public string TenHTPP {get; set;}
+    public string MaHTPP{ get; set; }
+    
+     public string TenHTPP { get; set; }
 }

@@ -1,3 +1,4 @@
+    using BaiThucHanh.Models;
 using Microsoft.AspNetCore.Mvc;
 namespace DemoMvc.Controllers;
     public class EmployeeController : Controller
@@ -7,8 +8,11 @@ namespace DemoMvc.Controllers;
         return View();
     }
     [HttpPost]
-    public IActionResult Hello()
+    public IActionResult Index(Employee emp)
     {
-        return View();
+        string strResult = "Xin chao" + emp.EmployeeID + "-" + emp.Age + "tuoi" ;
+    ViewBag.ThaiDuong =  strResult;
+    return View();
     }
+
     }
