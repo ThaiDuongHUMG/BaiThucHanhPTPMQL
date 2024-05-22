@@ -1,5 +1,4 @@
-
-  @model IEnumerable<DemoMvc.Models.Person>
+@model IEnumerable<DemoMvc.Models.Person>
 @using X.PagedList;
 @using X.PagedList.Mvc.Core;
 
@@ -17,6 +16,9 @@
     <thead>
         <tr>
             <th>
+                @Html.DisplayNameFor(model => model.PersonID)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.FullName)
             </th>
             <th>
@@ -29,46 +31,8 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.FullName)
+                @Html.DisplayFor(modelItem => item.PersonID)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PersonID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.PersonID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.PersonID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table> X.PagedList.Mvc.Core;
-
-@{
-    ViewData["Title"] = "Index";
-}
-
-<h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-    <a class="btn btn-sucess " asp-action="Download">Download</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.FullName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
             </td>
@@ -84,3 +48,12 @@
 }
     </tbody>
 </table>
+@Html.PagedListPager((IPagedList) Model, page => Url.Action("Index", new {page = page}), new X.PagedList.Mvc.Core.PagedListRenderOptions { LiElementClasses = new string[] {"page-item"}, PageClasses = new string[] { "page-link" }})
+<script src="htpp://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("pagesize").change(function() {
+            $("#form1").submit();
+        });
+    });
+</script>

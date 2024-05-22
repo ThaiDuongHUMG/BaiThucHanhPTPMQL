@@ -31,7 +31,21 @@ namespace DemoMvc.Migrations
 
                     b.HasKey("PersonID");
 
-                    b.ToTable("People");
+                    b.ToTable("Persons");
+                });
+
+            modelBuilder.Entity("DemoMvc.Models.Student", b =>
+                {
+                    b.Property<string>("StudentID")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("FullName")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("StudentID");
+
+                    b.ToTable("Student");
                 });
 #pragma warning restore 612, 618
         }
